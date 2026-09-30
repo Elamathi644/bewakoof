@@ -299,7 +299,7 @@ text-decoration: none;
     align-items:center;
     justify-content:center;
     margin: 100px auto;
-    background:#fff;
+    background:whitesmoke;
 }
 
 .login-box{
@@ -352,8 +352,7 @@ text-decoration: none;
     margin-top:18px;
     border:none;
     border-radius:6px;
-    background:#e1e3e6;
-    color:#68778d;
+    background: #ffd500;
     font-size:16px;
     font-weight:600;
 }
@@ -421,6 +420,10 @@ text-decoration: none;
     height:500px ;
     width: 45%;
 } 
+
+    .mega-menu {
+        display: none !important;
+    }
 } 
 
 @media screen and (max-width:575px) {
@@ -453,6 +456,11 @@ font-size: 12px;
     display: block;
     margin:0px 60px ;
 }
+
+
+    .mega-menu {
+        display: none !important;
+    }
 } 
 
 

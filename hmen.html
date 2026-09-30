@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOMEN SECTION</title>
-    <link rel="stylesheet" href="hwomen.css">
+    <title>MEN SECTION</title>
+    <link rel="stylesheet" href="hmen.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
@@ -16,7 +16,7 @@
               <div class="header-left">
 
           <a href="./index.html">
-            <img src="../images/logo.png" alt="Logo">
+            <img src="./images/logo.png" alt="Logo">
            </a>
 
 
@@ -104,13 +104,13 @@
                     </div>
                 </div>
                 <div class="m2 mega-image">
-                    <img src="../images/meg.jpg" alt="Shop Now">
+                    <img src="./images/meg.jpg" alt="Shop Now">
                 </div>
                 <div class="m2 mega-image">
-                    <img src="../images/meg1.jpg" alt="Shop Now">
+                    <img src="./images/meg1.jpg" alt="Shop Now">
                 </div>
                 <div class="m2 mega-image">
-                    <img src="../images/meg2.jpg" alt="Shop Now">
+                    <img src="./images/meg2.jpg" alt="Shop Now">
                 </div>
 
             </div>
@@ -207,15 +207,15 @@
                 
                 
                 <div class="m2 mega-image">
-                    <img src="../images/meg3.jpg" alt="Shop Now">
+                    <img src="./images/meg3.jpg" alt="Shop Now">
                 </div>
                 
                 <div class="m2 mega-image">
-                    <img src="../images/meg4.jpg" alt="Shop Now">
+                    <img src="./images/meg4.jpg" alt="Shop Now">
                 </div>
                 
                 <div class="m2 mega-image">
-                    <img src="../images/meg5.jpg" alt="Shop Now">
+                    <img src="./images/meg5.jpg" alt="Shop Now">
                 </div>
 
             </div>
@@ -358,7 +358,7 @@
 
 
                 <div class="m2 mega-image">
-                    <img src="../images/phone.png" alt="Shop Now">
+                    <img src="./images/phone.png" alt="Shop Now">
                 </div>
 
             </div>
@@ -371,8 +371,10 @@
     
           <div class="header-right">
 
-<input type="text" placeholder="Search by products">
-<i class="fa-solid fa-magnifying-glass"></i>
+<div class="search-box">
+    <input type="text" placeholder="Search by products">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
 
          <a href="./login.html">LOGIN</a>
 
@@ -380,7 +382,7 @@
             <i class="fa-regular fa-heart"></i>
          </a>
 
-         <a href="#">
+         <a href="./addicon.html">
             <i class="fa-solid fa-bag-shopping"></i>
          </a>
 
@@ -406,13 +408,13 @@
     <div class="breadcrumb">
         <a href="#">Home</a>
         <span>›</span>
-        <strong> Women Clothing</strong>
+        <strong>Men Clothing</strong>
     </div>
 
     <div class="heading-row">
 
         <div class="heading-left">
-            <h1>Clothes for WoMen</h1>
+            <h1>Clothes for Men</h1>
             <span>2927 Products</span>
         </div>
 
@@ -428,6 +430,7 @@
 <!-- =====================SIDE BAR===================== -->
 
 <section class="shop-layout">
+
 <aside class="filter-sidebar">
 
     <div class="filter-header">
@@ -435,184 +438,209 @@
         <a href="#">Clear All</a>
     </div>
 
+    <!-- GENDER -->
     <div class="filter-box">
         <input type="checkbox" id="gender">
         <label for="gender">
             <span>Gender</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Men</p>
-            <p>Women</p>
-            <p>Unisex</p>
+            <label><input type="checkbox" value="Men"><span>Men</span></label>
+            <label><input type="checkbox" value="Women"><span>Women</span></label>
+            <label><input type="checkbox" value="Unisex"><span>Unisex</span></label>
         </div>
     </div>
 
+    <!-- CATEGORY -->
     <div class="filter-box">
         <input type="checkbox" id="category">
         <label for="category">
             <span>Category</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>T-Shirts</p>
-            <p>Shirts</p>
-            <p>Jeans</p>
-            <p>Hoodies</p>
+            <label><input type="checkbox" value="T-Shirts"><span>T-Shirts</span></label>
+            <label><input type="checkbox" value="Shirts"><span>Shirts</span></label>
+            <label><input type="checkbox" value="Jeans"><span>Jeans</span></label>
+            <label><input type="checkbox" value="Hoodies"><span>Hoodies</span></label>
         </div>
     </div>
 
+    <!-- SIZES -->
     <div class="filter-box">
         <input type="checkbox" id="sizes">
         <label for="sizes">
             <span>Sizes</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>S</p>
-            <p>M</p>
-            <p>L</p>
-            <p>XL</p>
-            <p>XXL</p>
+            <label><input type="checkbox" value="S"><span>S</span></label>
+            <label><input type="checkbox" value="M"><span>M</span></label>
+            <label><input type="checkbox" value="L"><span>L</span></label>
+            <label><input type="checkbox" value="XL"><span>XL</span></label>
+            <label><input type="checkbox" value="XXL"><span>XXL</span></label>
         </div>
     </div>
 
+    <!-- BRAND -->
     <div class="filter-box">
         <input type="checkbox" id="brand">
         <label for="brand">
             <span>Brand</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Bewakoof</p>
-            <p>Campus Sutra</p>
-            <p>Difference Of Opinion</p>
+            <label><input type="checkbox" value="Bewakoof"><span>Bewakoof</span></label>
+            <label><input type="checkbox" value="Campus Sutra"><span>Campus Sutra</span></label>
+            <label><input type="checkbox" value="Difference Of Opinion"><span>Difference Of Opinion</span></label>
         </div>
     </div>
 
+    <!-- COLOR -->
     <div class="filter-box">
         <input type="checkbox" id="color">
         <label for="color">
             <span>Color</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Black</p>
-            <p>White</p>
-            <p>Blue</p>
-            <p>Red</p>
-            <p>Green</p>
+            <label><input type="checkbox" value="Black"><span>Black</span></label>
+            <label><input type="checkbox" value="White"><span>White</span></label>
+            <label><input type="checkbox" value="Blue"><span>Blue</span></label>
+            <label><input type="checkbox" value="Red"><span>Red</span></label>
+            <label><input type="checkbox" value="Green"><span>Green</span></label>
         </div>
     </div>
 
+    <!-- PATTERN -->
     <div class="filter-box">
         <input type="checkbox" id="pattern">
         <label for="pattern">
             <span>Pattern</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Printed</p>
-            <p>Solid</p>
-            <p>Graphic</p>
+            <label><input type="checkbox" value="Printed"><span>Printed</span></label>
+            <label><input type="checkbox" value="Solid"><span>Solid</span></label>
+            <label><input type="checkbox" value="Graphic"><span>Graphic</span></label>
         </div>
     </div>
 
+    <!-- FIT -->
     <div class="filter-box">
         <input type="checkbox" id="fit">
         <label for="fit">
             <span>Fit</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Regular Fit</p>
-            <p>Oversized Fit</p>
-            <p>Slim Fit</p>
+            <label><input type="checkbox" value="Regular Fit"><span>Regular Fit</span></label>
+            <label><input type="checkbox" value="Oversized Fit"><span>Oversized Fit</span></label>
+            <label><input type="checkbox" value="Slim Fit"><span>Slim Fit</span></label>
         </div>
     </div>
 
+    <!-- PRICE -->
     <div class="filter-box">
         <input type="checkbox" id="price">
         <label for="price">
             <span>Price</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Under ₹499</p>
-            <p>₹500 - ₹999</p>
-            <p>₹1000 - ₹1499</p>
-            <p>Above ₹1500</p>
+            <label><input type="checkbox" value="Under 499"><span>Under ₹499</span></label>
+            <label><input type="checkbox" value="500-999"><span>₹500 - ₹999</span></label>
+            <label><input type="checkbox" value="1000-1499"><span>₹1000 - ₹1499</span></label>
+            <label><input type="checkbox" value="Above 1500"><span>Above ₹1500</span></label>
         </div>
     </div>
 
+    <!-- COLLABORATION -->
     <div class="filter-box">
         <input type="checkbox" id="collaboration">
         <label for="collaboration">
             <span>Collaboration</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Marvel</p>
-            <p>Disney</p>
-            <p>Anime</p>
+            <label><input type="checkbox" value="Marvel"><span>Marvel</span></label>
+            <label><input type="checkbox" value="Disney"><span>Disney</span></label>
+            <label><input type="checkbox" value="Anime"><span>Anime</span></label>
         </div>
     </div>
 
+    <!-- OFFERS -->
     <div class="filter-box">
         <input type="checkbox" id="offers">
         <label for="offers">
             <span>Offers</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>Buy 2 for ₹999</p>
-            <p>Buy 3 Get 10% Off</p>
-            <p>Special Offers</p>
+            <label><input type="checkbox" value="Buy 2 for 999"><span>Buy 2 for ₹999</span></label>
+            <label><input type="checkbox" value="Buy 3 Get 10% Off"><span>Buy 3 Get 10% Off</span></label>
+            <label><input type="checkbox" value="Special Offers"><span>Special Offers</span></label>
         </div>
     </div>
 
+    <!-- DISCOUNT -->
     <div class="filter-box">
         <input type="checkbox" id="discount">
         <label for="discount">
             <span>Discount</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>10% and above</p>
-            <p>30% and above</p>
-            <p>50% and above</p>
-            <p>70% and above</p>
+            <label><input type="checkbox" value="10"><span>10% and above</span></label>
+            <label><input type="checkbox" value="30"><span>30% and above</span></label>
+            <label><input type="checkbox" value="50"><span>50% and above</span></label>
+            <label><input type="checkbox" value="70"><span>70% and above</span></label>
         </div>
     </div>
 
+    <!-- RATINGS -->
     <div class="filter-box">
         <input type="checkbox" id="ratings">
         <label for="ratings">
             <span>Ratings</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>4★ & above</p>
-            <p>3★ & above</p>
-            <p>2★ & above</p>
+            <label><input type="checkbox" value="4"><span>4★ & above</span></label>
+            <label><input type="checkbox" value="3"><span>3★ & above</span></label>
+            <label><input type="checkbox" value="2"><span>2★ & above</span></label>
         </div>
     </div>
 
+    <!-- MORE FILTERS -->
     <div class="filter-box">
         <input type="checkbox" id="morefilters">
         <label for="morefilters">
             <span>More Filters</span>
             <span class="filter-arrow">⌄</span>
         </label>
+
         <div class="filter-options">
-            <p>New Arrivals</p>
-            <p>Bestsellers</p>
-            <p>Trending</p>
+            <label><input type="checkbox" value="New Arrivals"><span>New Arrivals</span></label>
+            <label><input type="checkbox" value="Bestsellers"><span>Bestsellers</span></label>
+            <label><input type="checkbox" value="Trending"><span>Trending</span></label>
         </div>
     </div>
 
 </aside>
-
 
 <!-- ================= MEN CATEGORIES============= -->
     <!-- PRODUCTS -->
@@ -623,7 +651,7 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="../images/a2.jpg" alt="">
+                    <img src="./images/go1.jpg" alt="">
                     <span class="product-tag">OVERSIZED FIT</span>
                     <span class="product-rating">★ 4.7</span>
                     <span class="product-heart">♡</span>
@@ -645,7 +673,7 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="../images/g2.jpg" alt="">
+                    <img src="./images/go2.jpg" alt="">
                     <span class="product-tag">OVERSIZED FIT</span>
                     <span class="product-rating">★ 4.5</span>
                     <span class="product-heart">♡</span>
@@ -667,7 +695,7 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="../images/g3.jpg" alt="">
+                    <img src="./images/go3.jpg" alt="">
                     <span class="product-tag">OVERSIZED FIT</span>
                     <span class="product-rating">★ 4.7</span>
                     <span class="product-heart">♡</span>
@@ -687,48 +715,48 @@
             </div>
 
 
-             <div class="product-card"><div class="product-image"><img src="../images/g4.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Oversized T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
+             <div class="product-card"><div class="product-image"><img src="./images/go4.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Oversized T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/g5.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/go5.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/g6.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Graphic T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t1.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Graphic T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/g8.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/sh.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/g7.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Cotton Printed T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t2.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Cotton Printed T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/cus.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t3.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/dress.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's White Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t10.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's White Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/n1.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Oversized T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t4.png" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Oversized T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
 
         <!-- ROW 6 -->
 
-        <div class="product-card"><div class="product-image"><img src="../images/n2.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Graphic Casual T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t5.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Graphic Casual T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/n3.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Casual T-Shirt...</p><div class="product-price">₹649 <del>₹1,299</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹530</div><div class="offer">♣ Buy 2 for ₹999</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t6.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Casual T-Shirt...</p><div class="product-price">₹649 <del>₹1,299</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹530</div><div class="offer">♣ Buy 2 for ₹999</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/n4.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t7.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/pulse.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Adventure Printed T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t8.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Adventure Printed T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
 
 
         <!-- ROW 7 -->
 
-        <div class="product-card"><div class="product-image"><img src="../images/tg4.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Oversized T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t9.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.7</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed Oversized T-Shirt...</p><div class="product-price">₹699 <del>₹1,399</del> <span>50% OFF</span></div><div class="low-price">Get it for as low as ₹570</div><div class="offer">♣ Buy 2 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/topsg.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t10.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.6</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Printed T-Shirt...</p><div class="product-price">₹599 <del>₹1,299</del> <span>54% OFF</span></div><div class="low-price">Get it for as low as ₹499</div><div class="offer">♣ Buy 2 for ₹999</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/tshirtg.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Graphic T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/tshirt.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.5</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Casual Graphic T-Shirt...</p><div class="product-price">₹749 <del>₹1,399</del> <span>46% OFF</span></div><div class="low-price">Get it for as low as ₹620</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
-        <div class="product-card"><div class="product-image"><img src="../images/g7.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
-                <div class="product-card"><div class="product-image"><img src="../images/g8.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
-        <div class="product-card"><div class="product-image"><img src="../images/g5.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
-                <div class="product-card"><div class="product-image"><img src="../images/g2.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
-        <div class="product-card"><div class="product-image"><img src="../images/g3.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
-        <div class="product-card"><div class="product-image"><img src="../images/g8.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/go4.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+                <div class="product-card"><div class="product-image"><img src="./images/go3.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/go2.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+                <div class="product-card"><div class="product-image"><img src="./images/go1.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t4.png" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
+        <div class="product-card"><div class="product-image"><img src="./images/t6.jpg" alt=""><span class="product-tag">OVERSIZED FIT</span><span class="product-rating">★ 4.8</span><span class="product-heart">♡</span></div><h3>Bewakoof®</h3><p>Men's Black Graphic T-Shirt...</p><div class="product-price">₹799 <del>₹1,499</del> <span>47% OFF</span></div><div class="low-price">Get it for as low as ₹650</div><div class="offer">♣ Buy 3 for ₹1199</div></div>
 
         </div>
 
@@ -799,7 +827,7 @@
 
     <div class="footer-logo">
         <a href="index.html">
-            <img src="../images/logo1.png" alt="Bewakoof">
+            <img src="./images/logo1.png" alt="Bewakoof">
         </a>
     </div>
 
@@ -849,11 +877,11 @@
             <div class="app-links">
 
                 <a href="https://play.google.com/" target="_blank">
-                    <img src="../images/gply.jpg" alt="Google Play">
+                    <img src="./images/gply.jpg" alt="Google Play">
                 </a>
 
                 <a href="https://www.apple.com/app-store/" target="_blank">
-                    <img src="../images/apple.jpg" alt="App Store">
+                    <img src="./images/apple.jpg" alt="App Store">
                 </a>
 
             </div>
@@ -867,7 +895,7 @@
 
             <h3>CONNECT WITH US</h3>
 
-           <a href="https://www.facebook.com/bewakoofcom/" target="_blank" class="social-row">
+            <a href="https://www.facebook.com/bewakoofcom/" target="_blank" class="social-row">
                 <i class="fa-brands fa-facebook-f"></i>
                 <span>4.7M People like this</span>
             </a>
@@ -909,27 +937,27 @@
             <div class="payment-icons">
 
                 <a href="#">
-                    <img src="../images/gpay.jpg" alt="GPay">
+                    <img src="./images/gpay.jpg" alt="GPay">
                 </a>
 
                 <a href="#">
-                    <img src="../images/patym.jpg" alt="Paytm">
+                    <img src="./images/patym.jpg" alt="Paytm">
                 </a>
 
                 <a href="#">
-                    <img src="../images/phonepay.jpg" alt="PhonePe">
+                    <img src="./images/phonepay.jpg" alt="PhonePe">
                 </a>
 
                 <a href="#">
-                    <img src="../images/myn.jpg" alt="Visa">
+                    <img src="./images/myn.jpg" alt="Visa">
                 </a>
 
                 <a href="#">
-                    <img src="../images/mee.jpg" alt="RuPay">
+                    <img src="./images/mee.jpg" alt="RuPay">
                 </a>
 
                 <a href="#">
-                    <img src="../images/meg.jpg" alt="Mastercard">
+                    <img src="./images/meg.jpg" alt="Mastercard">
                 </a>
 
             </div>

@@ -1010,6 +1010,11 @@ text-decoration: none;
         column-gap: 50px;
     }
 
+    
+    .mega-menu {
+        display: none !important;
+    }
+
 }
 
 
@@ -1094,6 +1099,11 @@ text-decoration: none;
         width: 200px;
     }
 
+    
+    .mega-menu {
+        display: none !important;
+    }
+
 }
 
 
@@ -1131,6 +1141,10 @@ text-decoration: none;
 
     .header-right i {
         font-size: 19px;
+    }
+    
+    .mega-menu {
+        display: none !important;
     }
 
     /* CONTACT SECTION */

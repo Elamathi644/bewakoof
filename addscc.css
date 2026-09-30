@@ -1,0 +1,120 @@
+.success-box {
+    position: relative;
+    width: 450px;
+    min-height: 250px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 250px auto;
+
+    background: #e8f8ec;
+    border: 1px solid #b7e4c1;
+    border-radius: 15px;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Success heading */
+.success-box h2 {
+    color: #16833a;
+    font-size: 23px;
+    z-index: 2;
+}
+
+/* Success message */
+.success-box p {
+    color: #444;
+    font-size: 15px;
+    z-index: 2;
+}
+
+/* Go to bag */
+.success-box a {
+    background: #16a500;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.confetti {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.confetti span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    opacity: 0;
+    animation: burst 1.5s ease-in-out ;
+}
+
+.confetti span:nth-child(1) {
+    --x: -180px;
+    --y: -70px;
+}
+
+.confetti span:nth-child(2) {
+    --x: 170px;
+    --y: -80px;
+}
+
+.confetti span:nth-child(3) {
+    --x: -200px;
+    --y: 0px;
+}
+
+.confetti span:nth-child(4) {
+    --x: 250px;
+    --y: 0px;
+}
+
+.confetti span:nth-child(5) {
+    --x: -160px;
+    --y: 150px;
+}
+
+.confetti span:nth-child(6) {
+    --x: 170px;
+    --y: 150px;
+}
+
+.confetti span:nth-child(7) {
+    --x: 0px;
+    --y: -170px;
+}
+
+.confetti span:nth-child(8) {
+    --x: 0px;
+    --y: 90px;
+}
+
+@keyframes burst {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(
+            calc(-50% + var(--x)),
+            calc(-50% + var(--y))
+        ) scale(1.3) rotate(360deg);
+        opacity: 0;
+    }
+}
